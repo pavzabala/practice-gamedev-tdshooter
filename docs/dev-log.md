@@ -5,6 +5,7 @@
 - starting phase 0
 - lua formatter
 - Created player entity and movement prototype in main.lua
+- finished phase 0
 
 ## 2026-06-05
 - started phase 1
