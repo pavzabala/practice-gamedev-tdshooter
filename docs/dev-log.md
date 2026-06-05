@@ -8,5 +8,7 @@
 
 ## 2026-06-05
 - started phase 1
-- implemented aim line
+- added movement normalization(math.sqrt())
+- implemented aim line (mouse position - player position vector)
 - using math.atan2() to calculate player-to-mousepoint angle
+- refactored code; created graphics.lua and vector.lua in utils
