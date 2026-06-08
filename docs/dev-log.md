@@ -10,6 +10,13 @@
 ## 2026-06-05
 - started phase 1
 - added movement normalization(math.sqrt())
-- implemented aim line (mouse position - player position vector)
-- using math.atan2() to calculate player-to-mousepoint angle
-- refactored code; created graphics.lua and vector.lua in utils
+- IMPLEMENTED: aim line (mouse position - player position vector)
+- LEARNED: using math.atan2() to calculate player-to-mousepoint angle
+- REFACTOR: created graphics.lua and vector.lua in utils
+
+## 2026-06-08
+- IMPLEMENTED: bullets
+- REFACTOR: bullet instances to be managed by a bullet manager (`src/manager/bullet_manager.lua`)
+    - bullet manager iterates through list of bullets and updates or draws them.
+- LEARNED: using a metatable to define behavior of instances.
+    - class definition contains the functions, while `Bullet.new()` instantiates metatable and fields.
