@@ -1,5 +1,5 @@
 -- src/entities/enemy.lua
-vector = require("src.utils.vector")
+local vector = require("src.utils.vector")
 
 local Enemy = {}
 
