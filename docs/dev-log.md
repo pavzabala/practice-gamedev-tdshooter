@@ -18,5 +18,9 @@
 - IMPLEMENTED: bullets
 - REFACTOR: bullet instances to be managed by a bullet manager (`src/manager/bullet_manager.lua`)
     - bullet manager iterates through list of bullets and updates or draws them.
-- LEARNED: using a metatable to define behavior of instances.
+- LEARNED: using a metatable to define behavior of instances. instances each have their individual attributes, but I use `setmetatable()` to attribute behavior (draw functions, etc.) to the class definition.
     - class definition contains the functions, while `Bullet.new()` instantiates metatable and fields.
+
+## 2026-06-15
+- IMPLEMENTED: Phase 1 step 6, bullet movement
+- LEARNED: velocity calculation (current pos + vector * speed * dt)

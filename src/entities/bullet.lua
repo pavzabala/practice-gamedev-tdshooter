@@ -10,14 +10,18 @@ function Bullet.new(x, y, angle)
     self.x = x
     self.y = y
     self.angle = angle
-    self.speed = 500
+    self.speed = 100
     self.radius = 4
 
     return self
 end
 
 function Bullet:update(dt)
-    -- implement later in step 6
+    self.vx = math.cos(self.angle) * self.speed
+    self.vy = math.sin(self.angle) * self.speed
+
+    self.x = self.x + self.vx * dt
+    self.y = self.y + self.vy * dt
 end
 
 function Bullet:draw()

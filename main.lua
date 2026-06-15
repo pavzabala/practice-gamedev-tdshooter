@@ -1,7 +1,7 @@
 -- main.lua
 local player = require("src.entities.player")
 
-local bullet_manager = require("managers.bullet_manager")
+local bullet_manager = require("src.managers.bullet_manager")
 
 function love.load()
     love.window.setMode(1280, 720)
