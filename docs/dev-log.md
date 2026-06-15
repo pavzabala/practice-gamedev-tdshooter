@@ -24,3 +24,5 @@
 ## 2026-06-15
 - IMPLEMENTED: Phase 1 step 6, bullet movement
 - LEARNED: velocity calculation (current pos + vector * speed * dt)
+- IMPLEMENTED: phase 1 step 7, bullet garbage collection
+    - delete bullet once it leaves the screen boundary, based on radius: `bullet:isOffscreen()`

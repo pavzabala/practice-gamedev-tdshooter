@@ -10,7 +10,7 @@ function Bullet.new(x, y, angle)
     self.x = x
     self.y = y
     self.angle = angle
-    self.speed = 100
+    self.speed = 300
     self.radius = 4
 
     return self
@@ -26,6 +26,16 @@ end
 
 function Bullet:draw()
     love.graphics.circle("fill", self.x, self.y, self.radius)
+end
+
+function Bullet:isOffscreen()
+    local width = love.graphics.getWidth()
+    local height = love.graphics.getHeight()
+
+    return self.x < -self.radius
+        or self.x > width + self.radius
+        or self.y < -self.radius
+        or self.y > height + self.radius
 end
 
 return Bullet

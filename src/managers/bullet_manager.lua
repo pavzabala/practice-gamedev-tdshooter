@@ -13,8 +13,14 @@ function BulletManager.spawn(x, y, angle)
 end
 
 function BulletManager.update(dt)
-    for _, bullet in ipairs(BulletManager.list) do
+    for i = #BulletManager.list, 1, -1 do
+        local bullet = BulletManager.list[i]
+
         bullet:update(dt)
+
+        if bullet:isOffscreen() then
+            table.remove(BulletManager.list, i)
+        end
     end
 end
 
