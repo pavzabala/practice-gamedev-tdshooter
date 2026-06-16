@@ -48,12 +48,6 @@ The repository has moved beyond Lua-only exercises and currently contains a basi
 
 ## Roadmap Progress
 
-### Phase 0: Lua Fundamentals
-
-**Status:** Complete enough to move forward.
-
-Completed learning/practice areas include basic Lua project organization, modules, tables, metatable-based object patterns, and utility modules.
-
 ### Phase 1: LOVE2D Fundamentals
 
 **Status:** In progress, with the core prototype milestone mostly implemented.

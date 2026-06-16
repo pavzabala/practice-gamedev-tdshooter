@@ -30,4 +30,8 @@ function BulletManager.draw()
     end
 end
 
+function BulletManager.remove(index)
+    table.remove(BulletManager.list, index)
+end
+
 return BulletManager
