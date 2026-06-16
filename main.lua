@@ -17,7 +17,7 @@ function love.update(dt)
     enemy_manager.update(dt, player.x, player.y)
 
     if #bullet_manager.list > 0 and #enemy_manager.list > 0 then
-        for bi = #bullet_manager.list, 1 - 1 do
+        for bi = #bullet_manager.list, 1, -1 do
             local bullet = bullet_manager.list[bi]
 
             for ei = #enemy_manager.list, 1, -1 do
