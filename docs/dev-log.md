@@ -26,3 +26,9 @@
 - LEARNED: velocity calculation (current pos + vector * speed * dt)
 - IMPLEMENTED: phase 1 step 7, bullet garbage collection
     - delete bullet once it leaves the screen boundary, based on radius: `bullet:isOffscreen()`
+
+## 2026-06-16
+- IMPLEMENTED: Simple bullet-enemy collision
+    - IMPLENTED using new utils file `collision.lua`
+- LEARNED: using radial distances to detect collision (as seen in `collision.lua`)
+- LEARNED: while rectangles are rendered from the upper left corner, circle are rendered from the center
